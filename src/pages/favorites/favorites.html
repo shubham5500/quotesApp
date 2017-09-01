@@ -15,7 +15,7 @@
 <ion-content padding>
     <ion-list>
       <ion-item-sliding  *ngFor="let quo of quote">
-          <ion-item (click)="onClickPage(quo)">
+          <ion-item (click)="onClickPage(quo)" [ngClass]="{'altBackground': abc}">
               <h2>{{quo.text}}</h2>
               <p>{{quo.person}}</p>
           </ion-item>
